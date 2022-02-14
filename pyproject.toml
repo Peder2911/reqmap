@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "reqmap"
+version = "0.1.0"
+description = ""
+authors = ["peder2911 <pglandsverk@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+GitPython = "^3.1.26"
+toml = "^0.10.2"
+networkx = "^2.6.3"
+click = "^8.0.3"
+toolz = "^0.11.2"
+pydot = "^1.4.2"
+
+[tool.poetry.dev-dependencies]
+jedi = "^0.18.1"
+pylint = "^2.12.2"
+structout = "^0.1.36"
+
+[tool.poetry.scripts]
+reqmap = "reqmap.cli:cli"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
