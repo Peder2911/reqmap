@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "reqmap"
-version = "0.1.0"
+version = "0.2.0"
 description = "A package / CLI for mapping the dependencies of python projects"
 authors = ["peder2911 <pglandsverk@gmail.com>"]
 readme = "README.md"
