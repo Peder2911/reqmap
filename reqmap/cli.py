@@ -1,4 +1,5 @@
 
+import sys
 from typing import List
 import click
 from toolz.functoolz import compose, reduce
@@ -11,7 +12,7 @@ def cli():
     pass
 
 @cli.command()
-@click.option("output", type = click.File("w"))
+@click.option("-o","--output", type = click.File("w"), default = sys.stdout)
 @click.argument("projects", nargs = -1)
 def graph(projects: List[str], output):
     project_graph: nx.Graph = reduce(

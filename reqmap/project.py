@@ -64,7 +64,7 @@ class Project():
     @property
     def graph(self):
         graph = nx.Graph()
-        graph.add_node(self.name, kind = "package")
+        graph.add_node(self.name, kind = "package", shape = "square", color = "blue")
         for dep in self.requirements:
             graph.add_node(dep.name, kind = "dependency")
             graph.add_edge(self.name, dep.name)
